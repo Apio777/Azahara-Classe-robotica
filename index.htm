@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    
+    <style>
+        .resolucion {
+    width: 99%;
+    text-align: center;
+}
+
+
+/**Movil**/
+
+@media (max-width: 767px) {
+    .desktop {
+        display: none;
+    }
+    .tablet {
+        display: none;
+    }
+    .movil{
+        position: relative;
+        top: 300px;
+        right: 10px;
+
+    }
+}
+
+
+/**Tablet**/
+
+@media (min-width: 768px) and (max-width: 990px) {
+    .desktop {
+        display: none;
+    }
+    .movil {
+        display: none;
+    }
+    .tablet{
+        position: relative;
+        top: 340px;
+        right: 10px;
+    }
+}
+
+
+/**Escritorio**/
+
+@media (min-width: 991px) {
+    .tablet {
+        display: none;
+    }
+    .movil {
+        display: none;
+    }
+}
+    </style>
+</head>
+<body bgcolor="#F8F3EF">
+    
+    <div class="resolucion">
+        <div class="desktop">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/32I0Qso4sDg?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="tablet">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/32I0Qso4sDg?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="movil">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/32I0Qso4sDg?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+       
+</body>
+</html>
