@@ -4,67 +4,80 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title></title>
     
     <style>
-             body{
-                font-size: 3ch;
-             }
-             .contenedor{
-                height: 50vh;
-                margin: 5%;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-              }
-            .texto1{
-                width: 27%;
-                height: 20px;
-                position: relative;
-                left: 540px;
-                top: -260px;
-            }
-            .boton1{
-                position: relative;
-                display: inline-block;
-                padding: 15px 30px;
-                text-decoration: none;
-                color: #000;
-                overflow: hidden;
-                transition: 0.2s; 
-                position: relative;
-                left: 1160px;
-                top: 470px;          
-            }
-            .boton1:hover{
-                background: #ff7c26;
-                box-shadow: 0 0 10px #ff7c26, 0 0 40px #ff7c26, 0 0 80px #ff7c26;
-             }
-             .boton1{
-                position: absolute;
-                display: block;
-             }
-        </style>
+        .resolucion {
+    width: 99%;
+    text-align: center;
+}
+
+
+/**Movil**/
+
+@media (max-width: 767px) {
+    .desktop {
+        display: none;
+    }
+    .tablet {
+        display: none;
+    }
+    .movil{
+        position: relative;
+        top: 300px;
+        right: 10px;
+
+    }
+}
+
+
+/**Tablet**/
+
+@media (min-width: 768px) and (max-width: 990px) {
+    .desktop {
+        display: none;
+    }
+    .movil {
+        display: none;
+    }
+    .tablet{
+        position: relative;
+        top: 340px;
+        right: 10px;
+    }
+}
+
+
+/**Escritorio**/
+
+@media (min-width: 991px) {
+    .tablet {
+        display: none;
+    }
+    .movil {
+        display: none;
+    }
+    .desktop{
+        position: relative;
+        top: 250px;
+        right: 10px;
+    }
+}
+    </style>
 </head>
 <body bgcolor="#F8F3EF">
     
-    <h3 style="text-align: right;">Azahara teens</h3>
-    
-    <div class="contenedor">
-        <h1>Te conviertes en lo que le das a tu atención</h1>
+    <div class="resolucion">
+        <div class="desktop">
+            <iframe width="900" height="500" src="https://www.youtube.com/embed/32I0Qso4sDg?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="tablet">
+            <iframe width="700" height="415" src="https://www.youtube.com/embed/32I0Qso4sDg?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="movil">
+            <iframe width="460" height="215" src="https://www.youtube.com/embed/32I0Qso4sDg?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
     </div>
-    
-    <div class="texto1">
-        <p>Teletienda la mejor inversion a largo plazo una nueva funcion para mejorar tu vida con nuestra nueva funcion en nuestra pagina web</p>
-    </div>
-    
-   <a href="https://es.wikipedia.org/wiki/Felis_silvestris_catus" target="_blank" class="boton1">
-       EMPEZAR
-   </a>
-   
- 
-
-
+       
 </body>
 </html>
